@@ -21,9 +21,7 @@ public class Prompter
         
         System.out.println("Alright, let's get started!\n");
         
-        input.close();
-        
-        HomeRow.home();
+        Alphas.home();
 
     }
 
