@@ -1,0 +1,54 @@
+-Home Row-
+First you need to know the home row, the placement of your hands is seen here:
+A: Pinkie,S: Ring Finger,D: Middle Finger,F: Pointer Finger,J: Pointer Finger,K: Middle Finger,L: Ring Finger,Semicolon: Pinkie
+
+Let's practice to make sure you have the home row placement down.
+Type each letter four times as it appears.
+
+a,s,d,f,j,k,l,;
+
+asdf,fdsa,jkl;,;lkj,fd,fds,jk,jkl
+
+-Upper Row-
+Now we're going to learn the row above home. The fingers that you'll be using for these letters are listed below:
+Q: Pinkie,W: Ring Finger,E: Middle Finger,R: Pointer Finger,U: Pointer Finger,I: Middle Finger,O: Ring Finger,P: Pinkie
+
+Let's practice to make sure you have the upper row placement down.
+Type each letter four times as it appears.
+
+q,w,e,r,u,i,o,p
+
+qwer,rewq,uiop;,poiu,frde,rew,juki,uio
+
+-Inner Row-
+Next, we will learn the letters in the middle of the keyboard, examine the description of which fingers to use below:
+G: Left Pointer,T: Left Pointer,B: Left Pointer,H: Right Pointer,Y: Right Pointer,N: Right Pointer
+
+Let's practice to make sure you have the inner row placement down.
+Type each letter four times as it appears.
+
+t,g,b,y,h,n
+
+ftgb,jyhn,jnhy,fbgt,tgb,yhn,nhy,bgt
+
+-Lower Row-
+Now to learn the row below home, take a look at the description of which fingers to use below:
+Z: Pinkie,X: Ring Finger,C: Middle Finger,V: Pointer Finger,M: Pointer Finger,Comma: Middle Finger,Period: Ring Finger,Forward Slash: Pinkie
+
+Let's practice to make sure you have the lower row placement down.
+Type each letter four times as it appears.
+
+z x c v m , . /
+
+zxcv vcxz m,./ /.,m fvdc jmk, vcx m,.
+
+-Extra Symbols-
+Now we're going to look at the last couple of symbols, take a look at the description of which fingers to use below:
+Left Bracket: Right Pinkie,Right Bracket: Right Pinkie,Apostrophe: Right 
+
+Let's practice to make sure you have the extra symbols' placement down.
+Type each letter four times as it appears.
+
+[,],'
+
+[]','][,[],][

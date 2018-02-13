@@ -1,5 +1,8 @@
 
 //import java.util.Arrays;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Alphas
@@ -7,100 +10,88 @@ public class Alphas
 
     static Scanner input = new Scanner(System.in);
 
-    public static void home()
+    public static void home() throws FileNotFoundException
     {
 
-        System.out.println(
-                "First you need to know the home row, the placement of your hands is seen here:");
+        ArrayList<String> doc = new ArrayList<String>();
+        Scanner s = new Scanner(new File("alphaPrompt.txt"));
+        while (s.hasNext())
+        {
 
-        String[] homeDesc = {"A: Pinkie", "S: Ring Finger", "D: Middle Finger", "F: Pointer Finger",
-                "J: Pointer Finger", "K: Middle Finger", "L: Ring Finger", "Semicolon: Pinkie"};
+            doc.add(s.nextLine());
 
-        System.out.println();
+        }
+        s.close();
+
+        //Home Row
+        System.out.println(doc.get(1) + "\n");
+
+        String[] homeDesc = doc.get(2).split(",");
 
         desc(homeDesc);
 
-        System.out.println("Let's practice to make sure you have the home row placement down.\n");
-        System.out.println("Type each letter four times as it appers.");
+        System.out.println(doc.get(4) + "\n" + doc.get(5) + "\n");
 
-        String[] homeRow = {"a", "s", "d", "f", "j", "k", "l", ";"};
+        String[] homeRow = doc.get(7).split(",");
 
-        String[] homeWords = {"asdf", "fdsa", "jkl;", ";lkj", "fd", "fds", "jk", "jkl"};
+        String[] homeWords = doc.get(10).split(",");
 
         typer(homeRow, homeWords);
 
-        System.out.println(
-                "Now we're going to learn the row above home. The fingers that you'll be using for these letters are listed below:");
-
-        String[] upperDesc = {"Q: Pinkie", "W: Ring Finger", "E: Middle Finger",
-                "R: Pointer Finger",
-                "U: Pointer Finger", "I: Middle Finger", "O: Ring Finger", "P: Pinkie"};
-
-        System.out.println();
+        //Upper Row
+        System.out.println(doc.get(12) + "\n");
+        String[] upperDesc = doc.get(13).split(",");
 
         desc(upperDesc);
 
-        System.out.println("Let's practice to make sure you have the home row placement down.\n");
-        System.out.println("Type each letter four times as it appers.");
+        System.out.println(doc.get(15) + "\n" + doc.get(16) + "\n");
 
-        String[] upperRow = {"q", "w", "e", "r", "u", "i", "o", "p"};
+        String[] upperRow = doc.get(18).split(",");
 
-        String[] upperWords = {"qwer", "rewq", "uiop;", "poiu", "frde", "rew", "juki", "uio"};
+        String[] upperWords = doc.get(20).split(",");
 
         typer(upperRow, upperWords);
 
-        System.out.println(
-                "Next, we will learn the letters in the middle of the keyboard, examine the description of which fingers touse below:");
-        String[] innerDesc = {"G: Left Pointer", "T: Left Pointer", "B: Left Pointer",
-                "H: Right Pointer", "Y: Right Pointer", "N: Right Pointer"};
-
-        System.out.println();
+        //Inner Row
+        System.out.println(doc.get(23) + "\n");
+        String[] innerDesc = doc.get(24).split(",");
 
         desc(innerDesc);
 
-        System.out.println("Let's practice to make sure you have the home row placement down.\n");
-        System.out.println("Type each letter four times as it appers.");
+        System.out.println(doc.get(26) + "\n" + doc.get(27) + "\n");
 
-        String[] innerRow = {"t", "g", "b", "y", "h", "n"};
+        String[] innerRow = doc.get(29).split(",");
 
-        String[] innerWords = {"ftgb", "jyhn", "jnhy", "fbgt", "tgb", "yhn", "nhy", "bgt"};
-        
+        String[] innerWords = doc.get(31).split(",");
+
         typer(innerRow, innerWords);
-        
-        System.out.println(
-                "Now to learn the row below home, take a look at the description of which fingers touse below:");
-        String[] lowerDesc = {"Z: Pinkie", "X: Ring Finger", "C: Middle Finger",
-                "V: Pointer Finger",
-                "M: Pointer Finger", "Comma: Middle Finger", "Period: Ring Finger", "Forward Slash: Pinkie"};
 
-        System.out.println();
+        //Lower Row
+        System.out.println(doc.get(34) + "\n");
+        String[] lowerDesc = doc.get(35).split(",");
 
         desc(lowerDesc);
 
-        System.out.println("Let's practice to make sure you have the home row placement down.\n");
-        System.out.println("Type each letter four times as it appers.");
+        System.out.println(doc.get(37) + "\n" + doc.get(38) + "\n");
 
-        String[] lowerRow = {"z", "x", "c", "v", "m", ",", ".", "/"};
+        String[] lowerRow = doc.get(40).split(" ");
 
-        String[] lowerWords = {"zxcv", "vcxz", "m,./", "/.,m", "fvdc", "jmk,", "vcx", "m,."};
-        
+        String[] lowerWords = doc.get(42).split(" ");
+
         typer(lowerRow, lowerWords);
-        
-        System.out.println(
-                "Now we're going to look at the last couple of symbols, take a look at the description of which fingers touse below:");
-        String[] symbolDesc = {"Left Bracket: Right Pinkie", "Right Bracket: Right Pinkie", "Apostrophe: Right Pinkie"};
 
-        System.out.println();
+        //Extra Symbols
+        System.out.println(doc.get(45) + "\n");
+        String[] symbolDesc = doc.get(46).split(",");
 
         desc(symbolDesc);
 
-        System.out.println("Let's practice to make sure you have the home row placement down.\n");
-        System.out.println("Type each letter four times as it appers.");
+        System.out.println(doc.get(48) + "\n" + doc.get(49) + "\n");
 
-        String[] symbolRow = {"[", "]", "'"};
+        String[] symbolRow = doc.get(51).split(",");
 
-        String[] symbolWords = {"[]'", "'][", "[]", "]["};
-        
+        String[] symbolWords = doc.get(53).split(",");
+
         typer(symbolRow, symbolWords);
 
     }
