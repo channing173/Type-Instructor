@@ -23,76 +23,40 @@ public class Alphas
         }
         s.close();
 
-        //Home Row
-        System.out.println(doc.get(1) + "\n");
+        for (int i = 1; i < doc.size(); i += 11)
+        {
 
-        String[] homeDesc = doc.get(2).split(",");
+            System.out.println(doc.get(i) + "\n");
+            String desc[] = doc.get(i + 1).split(",");
 
-        desc(homeDesc);
+            desc(desc);
 
-        System.out.println(doc.get(4) + "\n" + doc.get(5) + "\n");
+            for (int j = i + 3; j < i + 9; j += 11)
+            {
 
-        String[] homeRow = doc.get(7).split(",");
+                System.out.println(doc.get(j) + "\n" + doc.get(j + 1) + "\n");
 
-        String[] homeWords = doc.get(10).split(",");
+                String[] row;
+                String[] words;
 
-        typer(homeRow, homeWords);
+                if (j + 3 != 40)
+                {
+                    row = doc.get(j + 3).split(",");
+                    words = doc.get(j + 5).split(",");
+                }
+                else
+                {
 
-        //Upper Row
-        System.out.println(doc.get(12) + "\n");
-        String[] upperDesc = doc.get(13).split(",");
+                    row = doc.get(j + 3).split(" ");
+                    words = doc.get(j + 5).split(" ");
 
-        desc(upperDesc);
+                }
 
-        System.out.println(doc.get(15) + "\n" + doc.get(16) + "\n");
+                typer(row, words);
 
-        String[] upperRow = doc.get(18).split(",");
+            }
 
-        String[] upperWords = doc.get(20).split(",");
-
-        typer(upperRow, upperWords);
-
-        //Inner Row
-        System.out.println(doc.get(23) + "\n");
-        String[] innerDesc = doc.get(24).split(",");
-
-        desc(innerDesc);
-
-        System.out.println(doc.get(26) + "\n" + doc.get(27) + "\n");
-
-        String[] innerRow = doc.get(29).split(",");
-
-        String[] innerWords = doc.get(31).split(",");
-
-        typer(innerRow, innerWords);
-
-        //Lower Row
-        System.out.println(doc.get(34) + "\n");
-        String[] lowerDesc = doc.get(35).split(",");
-
-        desc(lowerDesc);
-
-        System.out.println(doc.get(37) + "\n" + doc.get(38) + "\n");
-
-        String[] lowerRow = doc.get(40).split(" ");
-
-        String[] lowerWords = doc.get(42).split(" ");
-
-        typer(lowerRow, lowerWords);
-
-        //Extra Symbols
-        System.out.println(doc.get(45) + "\n");
-        String[] symbolDesc = doc.get(46).split(",");
-
-        desc(symbolDesc);
-
-        System.out.println(doc.get(48) + "\n" + doc.get(49) + "\n");
-
-        String[] symbolRow = doc.get(51).split(",");
-
-        String[] symbolWords = doc.get(53).split(",");
-
-        typer(symbolRow, symbolWords);
+        }
 
     }
 
