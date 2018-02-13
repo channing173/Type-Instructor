@@ -1,10 +1,11 @@
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Scanner;
 
 public class Prompter
 {
     
-    public static void main(String[] args)
+    public static void main(String[] args) throws FileNotFoundException
     {
 
         Scanner input = new Scanner(System.in);
