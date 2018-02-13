@@ -10,7 +10,7 @@ public class Prompter
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Welcome to INSTRUCTOR, press a letter to continue...");
+        System.out.println("Welcome to Channing's Type Instructor, press a letter to continue...");
 
         String keypress = input.next();
 
@@ -23,6 +23,8 @@ public class Prompter
         System.out.println("Alright, let's get started!\n");
         
         Alphas.home();
+        
+        input.close();
 
     }
 
