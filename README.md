@@ -8,4 +8,5 @@ Alphas: Walks through learning the alpha block of the keyboard, reads from alpha
 AlphaPrompt.txt: The prompt and exercises that are scanned into the prompter that gives the program the ability to have the exercises dynamically changed if necessary.
 
 Check out my blog with progress:
+
 layoutinstructor.wordpress.com
