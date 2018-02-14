@@ -6,3 +6,6 @@ Prompter: The main prompter that, when run, will give an introduction to the pro
 Alphas: Walks through learning the alpha block of the keyboard, reads from alphaPrompt.txt to prompt the person for their input.
 
 AlphaPrompt.txt: The prompt and exercises that are scanned into the prompter that gives the program the ability to have the exercises dynamically changed if necessary.
+
+Check out my blog with progress:
+layoutinstructor.wordpress.com
