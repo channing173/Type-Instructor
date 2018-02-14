@@ -18,7 +18,7 @@ Type each letter four times as it appears.
 
 q,w,e,r,u,i,o,p
 
-qwer,rewq,uiop;,poiu,frde,rew,juki,uio
+qwer,rewq,uiop,poiu,frde,rew,juki,uio
 
 -Inner Row-
 Next, we will learn the letters in the middle of the keyboard, examine the description of which fingers to use below:
