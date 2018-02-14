@@ -75,6 +75,7 @@ public class Alphas
 
             }
         }
+        System.out.println();
     }
 
     public static void Words(int hand, String[] words)
