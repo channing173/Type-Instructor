@@ -22,7 +22,7 @@ public class Prompter
         
         System.out.println("Alright, let's get started!\n");
         
-        Alphas.home();
+        Alphas.home(System.in);
         
         input.close();
 

@@ -1,15 +1,18 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Alphas
 {
 
-    static Scanner input = new Scanner(System.in);
+    static Scanner input;
 
-    public static void home() throws FileNotFoundException
+    public static void home(InputStream inputStream) throws FileNotFoundException
     {
+        
+        input = new Scanner(inputStream);
 
         ArrayList<String> doc = new ArrayList<String>();
         Scanner s = new Scanner(new File("alphaPrompt.txt"));
