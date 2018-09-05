@@ -8,6 +8,7 @@ public class Alphas
 {
 
     static Scanner input;
+    public static String currentText;
 
     public static void home(InputStream inputStream) throws FileNotFoundException
     {
@@ -226,5 +227,7 @@ public class Alphas
         return input.equals(match);
 
     }
+    
+    
 
 }

@@ -11,7 +11,6 @@ public class Prompter
         Scanner input = new Scanner(System.in);
 
         System.out.println("Welcome to Channing's Type Instructor, press a letter to continue...");
-
         String keypress = input.next();
 
         while (!verifyAny(keypress))
